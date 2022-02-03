@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+a {
+  color: orangered;
+  display: inline-block;
+}
+
+/* left Column */
+.left-col {
+  align-items: center;
+  padding: 4em 4em;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+}
+
+/* left column logo */
+.left-col .logo-wraper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo-wraper .logo {
+  font-size: 4rem;
+  color: crimson;
+  margin-right: 10px;
+}
+
+.logo-wraper .logo-text {
+  font-size: 3rem;
+}
+
+/* left column form */
+.left-col form {
+  margin-bottom: 3rem;
+}
+
+.left-col label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.left-col form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0.8em 0;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+.left-col form .btn-primary {
+  display: inline-block;
+  background-color: orangered;
+  width: 100%;
+  padding: 0.7em 1em;
+  border-radius: 3px;
+}
+
+/* left column forgot password section */
+.left-col .sign-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in a {
+  margin-bottom: 1em;
+}
+
+.sign-in .or {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.or hr {
+  flex: auto;
+  /* display: block;
+  width: 100%; */
+  border: none;
+  height: 1px;
+  background: #eee;
+}
+
+.or span {
+  margin: 0px 5px;
+}
+
+.sign-in .btn-secondary {
+  border: 1px solid #eee;
+  padding: 0.7em 1em;
+}
+
+/* left column footer */
+.left-col footer {
+  margin-top: 7em;
+  font-size: 12px;
+  text-align: center;
+}
+.right-col {
+  background-image: linear-gradient(60deg, black, brown);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-col .btn-secondary {
+  color: #fff;
+  padding: 0.8em 5em;
+  border: 2px solid #eee;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.right-col h1 {
+  color: #f1f1f1;
+  font-size: 3em;
+}
+
+@media (max-width: 700px) {
+  .right-col {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
